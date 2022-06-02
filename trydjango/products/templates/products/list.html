@@ -1,0 +1,5 @@
+
+{% for object in object_list %}
+<p>{{ object.id}} - <a href="{% url 'products:detail' object.id%}">{{ object.title}} </a></p>
+
+{% endfor %}

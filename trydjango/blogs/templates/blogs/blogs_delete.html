@@ -1,0 +1,11 @@
+
+{% extends 'pages/base.html' %}
+
+{% block content %}
+<form action="." method="POST">
+    {% csrf_token %}
+    <h1>Do you want to delete the Blogs: '{{ object.title }}'?</h1>
+    <p><input type="submit" value="Yes" />  </p>
+</form>
+
+{% endblock %}

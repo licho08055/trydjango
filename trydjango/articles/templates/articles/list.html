@@ -1,0 +1,10 @@
+{% extends 'pages/base.html' %}
+
+{% block content %}
+
+{% for article in article %}
+<p>{{ article.id }} - <a href="{% url 'home' %}">{{ article.name }}</a></p>
+
+{% endfor %}
+
+{% endblock %}
